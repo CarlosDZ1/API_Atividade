@@ -1,3 +1,6 @@
+### 🎯 Justificativa da Organização (Arquitetura Limpa)
+> A estrutura adota rigorosamente os preceitos da **Arquitetura Limpa (Clean Architecture)** ao isolar as regras de negócio centrais (`domain` e `use_cases`) de quaisquer tecnologias externas e bibliotecas de entrega HTTP (`presentation`) ou mecanismos de banco de dados (`infrastructure`). Os controladores HTTP atuam como meros adaptadores de entrada sem lógica de negócio embutida, delegando cada operação para um caso de uso específico com responsabilidade única (SRP), enquanto o acesso aos dados é realizado por contratos abstratos de repositório implementados via SQLAlchemy 2.0 com injeção de dependências nativa do FastAPI, assegurando alta testabilidade, manutenibilidade e total conformidade com os princípios SOLID e Clean Code.
+
 # 📚 StudyManager API
 
 > **API RESTful completa para gerenciamento de Usuários, Cursos e Matrículas**, desenvolvida aplicando **Arquitetura Limpa (Clean Architecture)**, **Princípios de Clean Code**, **ORM SQLAlchemy 2.0**, validação com **Pydantic v2** e padronização global de respostas HTTP.
@@ -71,8 +74,7 @@ API_Projeto/
 └── .gitignore                     # Arquivos ignorados pelo Git
 ```
 
-### 🎯 Justificativa da Organização (Arquitetura Limpa)
-> A estrutura adota rigorosamente os preceitos da **Arquitetura Limpa (Clean Architecture)** ao isolar as regras de negócio centrais (`domain` e `use_cases`) de quaisquer tecnologias externas e bibliotecas de entrega HTTP (`presentation`) ou mecanismos de banco de dados (`infrastructure`). Os controladores HTTP atuam como meros adaptadores de entrada sem lógica de negócio embutida, delegando cada operação para um caso de uso específico com responsabilidade única (SRP), enquanto o acesso aos dados é realizado por contratos abstratos de repositório implementados via SQLAlchemy 2.0 com injeção de dependências nativa do FastAPI, assegurando alta testabilidade, manutenibilidade e total conformidade com os princípios SOLID e Clean Code.
+
 
 ---
 
